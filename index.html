@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Consulenza Naturopatica Online | Luca Centolani</title>
+  <meta name="description" content="Consulenza naturopatica online con Luca Centolani: un incontro a distanza per osservare il quadro generale e ricevere indicazioni naturali personalizzate." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.lucacentolani.net/consulenza-naturopatica-online" />
+
+  <meta property="og:title" content="Consulenza Naturopatica Online | Luca Centolani" />
+  <meta property="og:description" content="Un incontro a distanza per mettere ordine nei disturbi che si ripresentano e capire quali indicazioni naturali possono avere senso per la tua situazione." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.lucacentolani.net/consulenza-naturopatica-online" />
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;
+    n.version='2.0';n.queue=[];
+    t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '220009700640058');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=220009700640058&ev=PageView&noscript=1" />
+  </noscript>
+
+  <style>
+    :root {
+      --bg: #f6f1e8;
+      --bg2: #efe6d7;
+      --paper: #fffdf8;
+      --paper-soft: rgba(255,253,248,.72);
+      --ink: #2d2a24;
+      --text: #474137;
+      --muted: #70685c;
+      --line: rgba(45, 42, 36, 0.14);
+      --green: #587156;
+      --green-dark: #334b32;
+      --green-soft: rgba(88, 113, 86, .12);
+      --clay: #b9855b;
+      --shadow: 0 18px 42px rgba(45, 42, 36, 0.09);
+      --radius: 24px;
+      --max: 1060px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 14% 0%, rgba(185, 133, 91, 0.11), transparent 30rem),
+        radial-gradient(circle at 92% 4%, rgba(88, 113, 86, 0.14), transparent 28rem),
+        linear-gradient(180deg, var(--bg), var(--bg2));
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .22;
+      background-image:
+        linear-gradient(rgba(45,42,36,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45,42,36,.035) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: linear-gradient(to bottom, #000, transparent 78%);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      position: relative;
+    }
+
+    header {
+      padding: 18px 0 10px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 18px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .brand strong {
+      display: block;
+      color: var(--ink);
+      font-weight: 750;
+      line-height: 1.25;
+    }
+
+    .brand span {
+      display: block;
+      line-height: 1.25;
+    }
+
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      color: var(--ink);
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-weight: 520;
+      letter-spacing: -0.035em;
+      line-height: 1.08;
+    }
+
+    h1 {
+      font-size: clamp(42px, 5.8vw, 68px);
+      max-width: 720px;
+    }
+
+    h2 {
+      font-size: clamp(30px, 4vw, 46px);
+      max-width: 620px;
+    }
+
+    h3 {
+      font-size: 22px;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .hero {
+      padding: 32px 0 58px;
+    }
+
+    .hero-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(320px, .65fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .hero-main,
+    .side-card,
+    .content-card,
+    .price-card,
+    .mini-card,
+    .soft-box {
+      background: var(--paper-soft);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-main {
+      border-radius: 30px;
+      padding: clamp(28px, 5vw, 54px);
+    }
+
+    .kicker {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: var(--green-dark);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: .055em;
+      text-transform: uppercase;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 32px;
+      height: 1px;
+      background: var(--green);
+    }
+
+    .lead {
+      margin-top: 22px;
+      max-width: 680px;
+      color: var(--text);
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-size: clamp(20px, 2.05vw, 24px);
+      line-height: 1.48;
+    }
+
+    .sublead {
+      margin-top: 18px;
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 750;
+      font-size: 14px;
+      line-height: 1.2;
+      transition: transform .16s ease, background .16s ease, box-shadow .16s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      color: #fffdf8;
+      background: var(--green);
+      box-shadow: 0 12px 22px rgba(51, 75, 50, .20);
+    }
+
+    .btn-primary:hover {
+      background: var(--green-dark);
+    }
+
+    .btn-secondary {
+      color: var(--ink);
+      background: rgba(255,253,248,.46);
+      border-color: var(--line);
+    }
+
+    .small-note {
+      margin-top: 13px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .side-card {
+      border-radius: 30px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .side-title {
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      color: var(--ink);
+      font-size: 26px;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    .side-list {
+      display: grid;
+      gap: 12px;
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .side-list li {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 10px;
+      align-items: start;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    .dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--green-soft);
+      color: var(--green-dark);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 850;
+      margin-top: 1px;
+    }
+
+    .side-bottom {
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .side-bottom strong {
+      display: block;
+      color: var(--ink);
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-size: 34px;
+      line-height: 1;
+      letter-spacing: -0.035em;
+      margin-top: 4px;
+    }
+
+    .section {
+      padding: 54px 0;
+      border-top: 1px solid rgba(45,42,36,.10);
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: minmax(240px, .78fr) minmax(0, 1.22fr);
+      gap: clamp(28px, 5vw, 62px);
+      align-items: start;
+    }
+
+    .body {
+      color: var(--text);
+      font-size: 17px;
+      line-height: 1.72;
+    }
+
+    .body p + p {
+      margin-top: 15px;
+    }
+
+    .content-card {
+      border-radius: var(--radius);
+      padding: 26px;
+    }
+
+    .situations {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 12px;
+      margin-top: 24px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .situations li {
+      padding: 15px 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,253,248,.55);
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    .steps {
+      display: grid;
+      gap: 12px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 15px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255,253,248,.62);
+    }
+
+    .step p {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .mini-card {
+      border-radius: 20px;
+      padding: 22px;
+      min-height: 150px;
+    }
+
+    .mini-card p {
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .price-card {
+      border-radius: 28px;
+      padding: clamp(26px, 4vw, 40px);
+      background:
+        linear-gradient(145deg, rgba(88,113,86,.12), transparent 55%),
+        rgba(255,253,248,.76);
+    }
+
+    .price-main {
+      color: var(--ink);
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-size: clamp(48px, 7vw, 74px);
+      line-height: 1;
+      letter-spacing: -0.055em;
+      margin: 8px 0 14px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .quote-section {
+      padding: 56px 0;
+    }
+
+    .quote {
+      max-width: 900px;
+      color: var(--ink);
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.16;
+      letter-spacing: -0.035em;
+    }
+
+    .final {
+      padding: 62px 0 92px;
+      text-align: center;
+    }
+
+    .final h2 {
+      margin: 0 auto;
+    }
+
+    .final .sublead {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    footer {
+      padding: 26px 0 88px;
+      border-top: 1px solid rgba(45,42,36,.10);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-grid a {
+      color: var(--muted);
+    }
+
+    .sticky-cta {
+      position: fixed;
+      z-index: 60;
+      display: none;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .sticky-cta a {
+      width: min(100%, 520px);
+      min-height: 54px;
+      pointer-events: auto;
+    }
+
+    @media (max-width: 900px) {
+      .hero-panel,
+      .section-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .side-card {
+        display: block;
+      }
+
+      h1 {
+        max-width: 100%;
+      }
+
+      .mini-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 660px) {
+      .wrap {
+        width: min(100% - 28px, var(--max));
+      }
+
+      .nav a {
+        display: none;
+      }
+
+      header {
+        padding-top: 14px;
+      }
+
+      .hero {
+        padding: 18px 0 42px;
+      }
+
+      .hero-main,
+      .side-card,
+      .content-card,
+      .price-card {
+        border-radius: 22px;
+      }
+
+      .hero-main,
+      .side-card {
+        padding: 23px 20px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 31px;
+      }
+
+      .lead {
+        font-size: 19px;
+      }
+
+      .actions .btn {
+        width: 100%;
+      }
+
+      .section {
+        padding: 44px 0;
+      }
+
+      .situations {
+        grid-template-columns: 1fr;
+      }
+
+      .content-card {
+        padding: 20px;
+      }
+
+      .sticky-cta {
+        display: flex;
+      }
+
+      footer {
+        padding-bottom: 92px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav" aria-label="Intestazione">
+      <div class="brand">
+        <strong>Luca Centolani</strong>
+        <span>Naturopata e Operatore Shiatsu dal 2004</span>
+      </div>
+      <a href="https://www.lucacentolani.net" target="_blank" rel="noopener">www.lucacentolani.net</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-panel">
+        <div class="hero-main">
+          <p class="kicker">Consulenza online</p>
+          <h1>Mettere ordine nei disturbi che si ripresentano.</h1>
+          <p class="lead">
+            Una consulenza naturopatica a distanza per osservare il quadro generale e capire quali indicazioni naturali possono avere senso per la tua situazione.
+          </p>
+          <p class="sublead">
+            Videochiamata o telefono. Ascolto, raccolta della situazione, lettura naturopatica e indicazioni personalizzate.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn-primary js-whatsapp"
+               href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20vorrei%20capire%20se%20la%20consulenza%20naturopatica%20online%20%C3%A8%20adatta%20alla%20mia%20situazione."
+               target="_blank"
+               rel="noopener">
+              Scrivimi su WhatsApp
+            </a>
+            <a class="btn btn-secondary" href="#come-funziona">Vedi come funziona</a>
+          </div>
+
+          <p class="small-note">
+            Non serve spiegare tutto subito. Bastano poche righe per capire da dove partire.
+          </p>
+        </div>
+
+        <aside class="side-card" aria-label="Sintesi della consulenza">
+          <div>
+            <p class="side-title">Una prima consulenza chiara, senza promesse e senza soluzioni standard.</p>
+            <ul class="side-list">
+              <li><span class="dot">1</span><span>Raccogliamo la situazione con calma.</span></li>
+              <li><span class="dot">2</span><span>Osserviamo sonno, energia, digestione, abitudini e momento personale.</span></li>
+              <li><span class="dot">3</span><span>Definiamo pochi passaggi sensati e sostenibili.</span></li>
+            </ul>
+          </div>
+          <div class="side-bottom">
+            Durata indicativa
+            <strong>60–75 min</strong>
+            Costo: 80€ · Videochiamata o telefono
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="cos-e">
+      <div class="wrap section-grid">
+        <div>
+          <p class="kicker">Che cos’è</p>
+          <h2>Una consulenza, non un trattamento corporeo.</h2>
+        </div>
+        <div class="content-card body">
+          <p>
+            La consulenza naturopatica online è un incontro individuale in cui raccogliamo con calma la tua situazione.
+          </p>
+          <p>
+            Mi racconti cosa sta succedendo, da quanto tempo, in quali momenti si presenta, cosa è cambiato nella tua vita e quali disturbi o cambiamenti stai notando.
+          </p>
+          <p>
+            Da lì costruisco una lettura naturopatica del quadro generale, con indicazioni concrete e sostenibili.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quando">
+      <div class="wrap">
+        <div class="section-grid">
+          <div>
+            <p class="kicker">Quando può essere utile</p>
+            <h2>Per situazioni che chiedono ascolto e ordine.</h2>
+          </div>
+          <div class="body">
+            <p>
+              Può essere un buon punto di partenza quando ci sono disturbi ricorrenti o una fase della vita più intensa, e vuoi capire meglio come muoverti senza aggiungere rimedi a caso.
+            </p>
+          </div>
+        </div>
+
+        <ul class="situations" aria-label="Situazioni trattate nella consulenza">
+          <li>Sonno leggero o non riposante</li>
+          <li>Digestione difficile e intestino irregolare</li>
+          <li>Stanchezza, energia bassa, gambe pesanti</li>
+          <li>Tensione, stress e carico emotivo</li>
+          <li>Cambiamenti ormonali e fasi di passaggio</li>
+          <li>Alimentazione, abitudini e supporti naturali</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="come-funziona">
+      <div class="wrap section-grid">
+        <div>
+          <p class="kicker">Come si svolge</p>
+          <h2>Un incontro semplice, ma ordinato.</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <span class="dot">1</span>
+            <div>
+              <h3>Raccolta della situazione</h3>
+              <p>Prima o durante l’incontro raccogliamo le informazioni principali: sonno, energia, digestione, abitudini, stress, cambiamenti recenti.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <span class="dot">2</span>
+            <div>
+              <h3>Lettura del quadro generale</h3>
+              <p>Osservo i collegamenti possibili tra i disturbi che si ripresentano, il momento personale e il terreno su cui stiamo lavorando.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <span class="dot">3</span>
+            <div>
+              <h3>Indicazioni personalizzate</h3>
+              <p>Ricevi una direzione di lavoro chiara, con pochi passaggi sensati e sostenibili nella vita quotidiana.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cosa-ricevi">
+      <div class="wrap">
+        <div class="section-grid">
+          <div>
+            <p class="kicker">Cosa può includere</p>
+            <h2>Pochi strumenti, scelti con criterio.</h2>
+          </div>
+          <div class="body">
+            <p>
+              Non serve usare tutto. Serve capire cosa è adatto alla persona e al momento.
+            </p>
+          </div>
+        </div>
+
+        <div class="mini-grid">
+          <article class="mini-card">
+            <h3>Naturopatia</h3>
+            <p>Indicazioni su abitudini, alimentazione di base, ritmo quotidiano e supporti naturali.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Floriterapia e rimedi</h3>
+            <p>Quando ha senso, possono entrare fiori di Bach, fiori australiani, gemmoderivati o oli essenziali.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Lettura MTC</h3>
+            <p>Una lettura secondo i principi della Medicina Tradizionale Cinese, senza forzature e senza linguaggio complicato.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="non-e">
+      <div class="wrap section-grid">
+        <div>
+          <p class="kicker">Cosa non è</p>
+          <h2>Niente promesse. Niente scorciatoie.</h2>
+        </div>
+        <div class="content-card body">
+          <p>
+            La consulenza naturopatica online non è una diagnosi medica.
+          </p>
+          <p>
+            Non sostituisce il medico, lo specialista, gli esami clinici o eventuali terapie in corso.
+          </p>
+          <p>
+            È un lavoro di osservazione, orientamento e supporto naturale, pensato per accompagnare la persona in modo serio e responsabile.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="durata-costo">
+      <div class="wrap section-grid">
+        <div>
+          <p class="kicker">Durata e costo</p>
+          <h2>Una prima consulenza chiara.</h2>
+        </div>
+        <div class="price-card">
+          <div class="meta">Durata indicativa</div>
+          <div class="price-main">60–75 min</div>
+          <div class="body">
+            <p>
+              Costo: <strong>80€</strong><br>
+              Modalità: videochiamata o telefono.
+            </p>
+            <p>
+              Se dopo il primo incontro ha senso continuare, possiamo valutare un incontro successivo o un piccolo percorso.
+            </p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary js-whatsapp"
+               href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20vorrei%20capire%20se%20la%20consulenza%20naturopatica%20online%20%C3%A8%20adatta%20alla%20mia%20situazione."
+               target="_blank"
+               rel="noopener">
+              Chiedi informazioni su WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="wrap">
+        <p class="quote">
+          “Non si tratta di aggiungere rimedi a caso. Si tratta di capire la persona, il momento e ciò che continua a ripresentarsi.”
+        </p>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="wrap">
+        <p class="kicker" style="justify-content:center;">Prima di prenotare</p>
+        <h2>Scrivimi poche righe sulla tua situazione.</h2>
+        <p class="sublead">
+          Ti rispondo con chiarezza e ti dico se la consulenza online può essere adatta oppure se è meglio orientarsi diversamente.
+        </p>
+        <div class="actions" style="justify-content:center;">
+          <a class="btn btn-primary js-whatsapp"
+             href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20vorrei%20capire%20se%20la%20consulenza%20naturopatica%20online%20%C3%A8%20adatta%20alla%20mia%20situazione."
+             target="_blank"
+             rel="noopener">
+            Scrivimi su WhatsApp
+          </a>
+          <a class="btn btn-secondary" href="https://www.lucacentolani.net/consulenza-naturopatica-online" target="_blank" rel="noopener">
+            Pagina principale sul sito
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="sticky-cta">
+    <a class="btn btn-primary js-whatsapp"
+       href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20vorrei%20capire%20se%20la%20consulenza%20naturopatica%20online%20%C3%A8%20adatta%20alla%20mia%20situazione."
+       target="_blank"
+       rel="noopener">
+      Scrivimi su WhatsApp
+    </a>
+  </div>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <span>© Luca Centolani · Naturopata e Operatore Shiatsu · Solarolo, RA</span>
+      <span>
+        <a href="https://www.lucacentolani.net" target="_blank" rel="noopener">Sito principale</a>
+        ·
+        <a href="https://www.lucacentolani.net/consulenza-naturopatica-online" target="_blank" rel="noopener">Consulenza online</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.js-whatsapp').forEach(function(link) {
+      link.addEventListener('click', function() {
+        if (typeof fbq === 'function') {
+          fbq('track', 'Lead', {
+            content_name: 'Consulenza naturopatica online - WhatsApp'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
